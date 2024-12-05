@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Amiibo</string>
+    <!-- RadioButtons text   -->
+    <string name="radio_amiiboSeries_text">Serie Amiibo</string>
+    <string name="radio_character_text">Personaje</string>
+    <!--  Bottombar text  -->
+    <string name="search_page">BÚSQUEDA</string>
+    <string name="home_page">INICIO</string>
+    <string name="favoritos_page">FAVORITOS</string>
+    <!-- Nav-graph labels -->
+    <string name="amiibo_list_label">Amiibo</string>
+    <string name="search_label">Busca tu amiibo</string>
+    <string name="favoritos_label">Amiibos favoritos</string>
+</resources>

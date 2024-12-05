@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/amiiboListFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_page" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_page" />
+
+    <item
+        android:id="@+id/favsFragment"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="@string/favoritos_page" />
+</menu>

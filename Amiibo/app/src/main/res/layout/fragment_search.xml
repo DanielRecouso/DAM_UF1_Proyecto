@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SearchFragment">
+
+
+    <SearchView
+        android:id="@+id/search_amiibo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_bottom"/>
+    <RadioGroup
+        android:id="@+id/category_radio_group"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Filters:"/>
+
+        <RadioButton
+            android:id="@+id/radio_character"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/radio_button_colors"
+            android:textStyle="bold"
+            android:checked="true"
+            android:padding="5dp"
+            android:background="@drawable/radio_button_background_selector"
+            style="@style/RadioButtonNoCircle"
+            android:text="@string/radio_character_text" />
+
+        <RadioButton
+            android:id="@+id/radio_game"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/radio_button_colors"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/radio_button_background_selector"
+            style="@style/RadioButtonNoCircle"
+            android:text="@string/radio_amiiboSeries_text" />
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/amiiboRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+
+
+</LinearLayout>
